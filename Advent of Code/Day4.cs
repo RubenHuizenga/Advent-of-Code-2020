@@ -54,9 +54,8 @@ namespace Advent_of_Code_2020
 
             foreach (var line in Input)
             {
-                if (line == "")
+                if (line == "" || line == Input[^1])
                 {
-
                     if (keyValuePairs.ContainsKey("byr") && keyValuePairs.ContainsKey("iyr") &&
                         keyValuePairs.ContainsKey("eyr") && keyValuePairs.ContainsKey("hgt") &&
                         keyValuePairs.ContainsKey("hcl") && keyValuePairs.ContainsKey("ecl") &&
