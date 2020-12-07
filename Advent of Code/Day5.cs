@@ -20,16 +20,16 @@ namespace Advent_of_Code_2020
         {
             var occupiedSeats = GetAllSeatIDs();
 
-            Utils.Print("The biggest ID is", $"{occupiedSeats.Max()}", ConsoleColor.Green);
+            Utils.Print("The biggest ID is", occupiedSeats.Max(), ConsoleColor.Green);
         }
 
         private static void Part2()
         {
             var occupiedSeats = GetAllSeatIDs();
 
-            for (var i = occupiedSeats.Min(); i <= occupiedSeats.Max(); i++)
+            for (var seatID = occupiedSeats.Min(); seatID <= occupiedSeats.Max(); seatID++)
             {
-                if(!occupiedSeats.Contains(i)) Utils.Print("Your seat has ID", $"{i}", ConsoleColor.Green);
+                if(!occupiedSeats.Contains(seatID)) Utils.Print("Your seat has ID", seatID, ConsoleColor.Green);
             }
         }
 

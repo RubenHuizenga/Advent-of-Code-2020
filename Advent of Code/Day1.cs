@@ -22,7 +22,7 @@ namespace Advent_of_Code_2020
                 for (var index2 = index1 + 1; index2 < Input.Length; index2++)
                 {
                     var entry2 = Input[index2];
-                    if (entry1 + entry2 == 2020) Utils.Print($"{entry1} * {entry2} =", $"{entry1 * entry2}", ConsoleColor.Green);
+                    if (entry1 + entry2 == 2020) Utils.Print($"{entry1} * {entry2} =", entry1 * entry2, ConsoleColor.Green);
                 }
             }
         }
@@ -39,7 +39,7 @@ namespace Advent_of_Code_2020
                     {
                         var entry3 = Input[index3];
                         if (entry1 + entry2 + entry3 == 2020) Utils.Print($"{entry1} * {entry2} * {entry3} =", 
-                            $"{entry1 * entry2 * entry3}", ConsoleColor.Green);
+                            entry1 * entry2 * entry3, ConsoleColor.Green);
                     }
                 }
             }

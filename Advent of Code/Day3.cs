@@ -29,7 +29,7 @@ namespace Advent_of_Code_2020
                 if (nextRow[column % nextRow.Length] == '#') noOfTrees++;
             }
 
-            if (print) Utils.Print("You will encounter", $"{noOfTrees}", "trees", ConsoleColor.Green);
+            if (print) Utils.Print("You will encounter", noOfTrees, "trees", ConsoleColor.Green);
 
             return noOfTrees;
         }
@@ -43,7 +43,7 @@ namespace Advent_of_Code_2020
             long e = Part1(false, 1, 2);
             var result = a * b * c * d * e;
 
-            Utils.Print($"The number of trees on each slope multiplied together give", $"{result}", ConsoleColor.Green);
+            Utils.Print($"The number of trees on each slope multiplied together give", result, ConsoleColor.Green);
         }
     }
 }

@@ -43,7 +43,7 @@ namespace Advent_of_Code_2020
                 keys.Clear();
             }
 
-            Utils.Print("There are", $"{noOfValidIDs}", "valid IDs", ConsoleColor.Green);
+            Utils.Print("There are", noOfValidIDs, "valid IDs", ConsoleColor.Green);
         }
 
         public static void Part2()
@@ -93,7 +93,7 @@ namespace Advent_of_Code_2020
                 }
             }
 
-            Utils.Print("There are", $"{noOfValidIDs}", "valid IDs", ConsoleColor.Green);
+            Utils.Print("There are", noOfValidIDs, "valid IDs", ConsoleColor.Green);
         }
     }
 }

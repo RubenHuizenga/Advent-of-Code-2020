@@ -28,7 +28,7 @@ namespace Advent_of_Code_2020
                 where requiredCharCounter <= upperbound && requiredCharCounter >= lowerbound
                 select lowerbound).Count();
 
-            Utils.Print("There are", $"{correctPasswords}", "correct passwords", ConsoleColor.Green);
+            Utils.Print("There are", correctPasswords, "correct passwords", ConsoleColor.Green);
         }
 
         private static void Part2()
@@ -43,7 +43,7 @@ namespace Advent_of_Code_2020
                 where password[pos1 - 1] == requiredChar ^ password[pos2 - 1] == requiredChar
                 select pos1).Count();
 
-            Utils.Print("There are", $"{correctPasswords}", "correct passwords", ConsoleColor.Green);
+            Utils.Print("There are", correctPasswords, "correct passwords", ConsoleColor.Green);
         }
     }
 }

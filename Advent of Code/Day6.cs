@@ -34,7 +34,7 @@ namespace Advent_of_Code_2020
                 answers.Clear();
             }
 
-            Utils.Print("The number of questions to which anyone answered yes, is", $"{result}", ConsoleColor.Green);
+            Utils.Print("The number of questions to which anyone answered yes, is", result, ConsoleColor.Green);
         }
 
         public static void Part2()
@@ -58,7 +58,7 @@ namespace Advent_of_Code_2020
                 }
             }
 
-            Utils.Print("The number of questions to which everyone answered yes, is", $"{result}", ConsoleColor.Green);
+            Utils.Print("The number of questions to which everyone answered yes, is", result, ConsoleColor.Green);
         }
     }
 }
