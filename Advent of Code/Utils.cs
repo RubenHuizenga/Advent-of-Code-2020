@@ -27,6 +27,11 @@ namespace Advent_of_Code_2020
             Print(null, coloredText, null, resultColor);
         }
 
+        public static void Print(int coloredText, ConsoleColor resultColor)
+        {
+            Print(null, coloredText.ToString(), null, resultColor);
+        }
+
         public static void Print(string preText, int coloredText, string postText, ConsoleColor resultColor)
         {
             Print(preText, coloredText.ToString(), postText, resultColor);
