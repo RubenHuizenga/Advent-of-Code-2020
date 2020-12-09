@@ -20,7 +20,8 @@ namespace Advent_of_Code_2020
             Day6.Run();
             Utils.Print("\n" + "========================    Day 7    ========================", ConsoleColor.Red);
             Day7.Run();
-
+            Utils.Print("\n" + "========================    Day 8    ========================", ConsoleColor.Red);
+            Day8.Run();
         }
     }
 }
